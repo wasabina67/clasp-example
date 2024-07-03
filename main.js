@@ -3,6 +3,6 @@ function myFunction() {
 }
 
 function sendEmailToSelf() {
-  var recipient = Session.getActiveUser().getEmail();
+  const recipient = Session.getActiveUser().getEmail();
   GmailApp.sendEmail(recipient, 'subject', 'body');
 }
